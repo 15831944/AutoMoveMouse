@@ -1,0 +1,17 @@
+﻿REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则以下条目将
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\AutoMoveMouse.Application = AutoMoveMouse Application
+
+
+HKEY_CLASSES_ROOT\AutoMoveMouse.Application\CLSID = {8466947c-e1b9-423c-9eb2-9a9545fef3b9}
+
+HKEY_CLASSES_ROOT\CLSID\{8466947c-e1b9-423c-9eb2-9a9545fef3b9} = AutoMoveMouse Application
+HKEY_CLASSES_ROOT\CLSID\{8466947c-e1b9-423c-9eb2-9a9545fef3b9}\ProgId = AutoMoveMouse.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{8466947c-e1b9-423c-9eb2-9a9545fef3b9}\LocalServer32 = AutoMoveMouse.EXE

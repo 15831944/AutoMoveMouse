@@ -1,0 +1,29 @@
+﻿// AutoMoveMouse.idl: AutoMoveMouse.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(AutoMoveMouse.tlb)。
+
+[ uuid(0a8688e4-de7d-4a36-b05f-a3564a102556), version(1.0) ]
+library AutoMoveMouse
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CAutoMoveMouseDoc 的主调度接口
+
+	[ uuid(33252f45-046f-437c-8ec6-f7e7d46cdb0c) ]
+	dispinterface IAutoMoveMouse
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CAutoMoveMouseDoc 的类信息
+
+	[ uuid(8466947c-e1b9-423c-9eb2-9a9545fef3b9) ]
+	coclass AutoMoveMouse
+	{
+		[default] dispinterface IAutoMoveMouse;
+	};
+};
